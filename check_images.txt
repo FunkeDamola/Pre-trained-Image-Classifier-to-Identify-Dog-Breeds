@@ -1,0 +1,20 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: Yes, all the three model architectures classified the breed of Dog_01.jpg to be the same breed which is samoyed or samoyede as seen in the classifier label value in each model.
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: No, none of the three model architectures classified the breed of dog in Dog_01.jpg to be the same as Dog_02.jpg. The alexnet model classified Dog_02.jpg as ptarmigan (a bird), resnet model classified Dog_02.jpg as arctic fox or white foxor alopex lagopus (white foxes), and the vgg model classified Dog_02.jpg as sulphur-crested cockatoo, kakatoe galerita or cacatua (all birds).
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: Yes, all the model architectures correctly classified Borneon_Orangutan_01.jpg and Pen_01.jpg as not dogs. This is observed from the values of the keys "PetLabelDog" and "ClassLabelDog" both being 0 for the two images.
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer: A first glance at the calculated statistics for the three models and answers 1 and 3 suggests that all the models performed similarly with none outperforming the other. However, taking a close look at the models' suggestions for Dog_02.jpg, the resnet model seems to have performed better than the other models as it suggests an animal that looks very much like the dog in Dog_02.jpg, while the other two models only suggested animals that are birds and do not look like the dog in the original picture.
